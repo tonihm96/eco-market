@@ -1,0 +1,15 @@
+{
+  "expo": {
+    "name": "Eco Market",
+    "slug": "eco-market",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "ecomarket",
+    "userInterfaceStyle": "automatic",
+    "ios": { "supportsTablet": true, "bundleIdentifier": "dev.ecomarket.app" },
+    "android": { "package": "dev.ecomarket.app", "edgeToEdgeEnabled": true },
+    "web": { "bundler": "metro", "output": "single" },
+    "plugins": ["expo-router", "expo-secure-store"],
+    "experiments": { "typedRoutes": false }
+  }
+}
