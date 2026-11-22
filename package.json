@@ -1,0 +1,12 @@
+{
+  "name": "eco-market",
+  "private": true,
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "db:up": "docker compose up -d",
+    "api:dev": "bun --filter @eco-market/api dev",
+    "admin:dev": "bun --filter @eco-market/admin dev",
+    "mobile:dev": "bun --filter @eco-market/mobile start",
+    "typecheck": "bun --filter '*' typecheck"
+  }
+}

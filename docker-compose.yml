@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:18
+    container_name: eco-market-db
+    environment:
+      POSTGRES_DB: eco_market
+      POSTGRES_USER: eco_market
+      POSTGRES_PASSWORD: secretpassword
+    ports:
+      - "5432:5432"
+    volumes:
+      - eco-market-data:/var/lib/postgresql
+
+volumes:
+  eco-market-data:
